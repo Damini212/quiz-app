@@ -1,7 +1,7 @@
 #root,
 body,
 html {
-  background-image: url("quiz.jpg");
+  background-image: url("./assets/quiz.jpg");
   font-family: sans-serif;
   font-size: medium;
 }
