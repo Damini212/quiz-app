@@ -56,7 +56,7 @@ function App() {
     setShowingScore(!showingScore);
     
   }
-
+ 
   return (
     <main>
       {!isGameStarted ? (
@@ -96,6 +96,7 @@ function App() {
                             : "selected_answer"
                           : "")
                       }
+                      disabled={showingScore}
                     >
                       {answer}
                     </button>
@@ -106,7 +107,7 @@ function App() {
             </div>
           ))}
         <br></br>
-          <button className="submit-btn" onClick={results}>Submit</button>
+          <button className="submit-btn" onClick={results} disabled={Object.keys(quizAnswer).length < newQuiz.length}>Submit</button>
           <br></br>
           {showingScore && (
             <div>
