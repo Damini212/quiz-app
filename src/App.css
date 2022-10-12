@@ -1,0 +1,58 @@
+#root,
+body,
+html {
+  background-image: url("quiz.jpg");
+  font-family: sans-serif;
+  font-size: medium;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.answers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.incorrect_answers {
+  background-color: rgb(199, 162, 162);
+}
+.right_answer {
+  background-color: rgb(174, 200, 189);
+}
+.selected_answer {
+  background-color: rgb(202, 176, 212);
+  text-align: center;
+}
+.btn {
+  border-radius: 15px;
+  height: 30px;
+  border: 1px solid black;
+  text-align: center;
+}
+.start-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.submit-btn,
+.play-btn,
+.start-game {
+  width: 100px;
+  background-color: rgb(188, 214, 229);
+  border-radius: 13px;
+  height: 30px;
+  border: 1px solid black;
+}
+.submit-btn:hover {
+  background-color: rgb(126, 173, 173);
+}
+.play-btn:hover {
+  background-color: rgb(126, 173, 173);
+}
+.start-game:hover {
+  background-color: rgb(126, 173, 173);
+}
